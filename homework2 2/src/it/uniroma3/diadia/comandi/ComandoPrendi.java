@@ -13,15 +13,7 @@ public class ComandoPrendi  implements Comando{
 
 	@Override
 	public void esegui(Partita partita) {
-		// TODO Auto-generated method stub
-		Attrezzo a = partita.getLabirinto().getStanzaCorrente().getAttrezzo(nomeAttrezzo);
-		if(partita.getGiocatore().getBorsa().getPesoRimanente(a)) {
-			partita.getGiocatore().getBorsa().addAttrezzo(a);
-			partita.getLabirinto().getStanzaCorrente().removeAttrezzo(a);
-		} 
-		else {
-			io.mostraMessaggio("Attrezzo troppo pesante per entrare nella borsa!");
-		}
+		
 	}
 
 	

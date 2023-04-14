@@ -3,21 +3,15 @@ package it.uniroma3.diadia.comandi;
 import it.uniroma3.diadia.IO;
 import it.uniroma3.diadia.Partita;
 
+public class ComandoVai implements Comando {
 
-
-public class ComandoAiuto implements Comando {
-
-	public IO io;
-	public static final  String nome="Aiuto";
-	static final public String[] ELENCO_COMANDI = {"vai", "aiuto", "fine","prendi", "posa", "guarda"};
 	
+	
+	public static final String nome="Vai";
 	@Override
 	public void esegui(Partita partita) {
 		// TODO Auto-generated method stub
 		
-		for(int i=0; i< ELENCO_COMANDI.length; i++) 
-			io.mostraMessaggio(ELENCO_COMANDI[i]+" ");
-		io.mostraMessaggio("");
 	}
 
 	@Override

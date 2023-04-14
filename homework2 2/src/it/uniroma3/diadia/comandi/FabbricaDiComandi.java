@@ -1,5 +1,6 @@
 package it.uniroma3.diadia.comandi;
 
-public class FabbricaDiComandi {
+public interface  FabbricaDiComandi {
+	
 
 }
